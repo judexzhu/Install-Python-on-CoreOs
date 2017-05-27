@@ -1,11 +1,15 @@
-core-01 ansible_ssh_host=10.11.22.33 ansible_ssh_user=core
+[s7k8s]
+s7k8swk04     ansible_host=10.1.51.64
+s7k8swk05     ansible_host=10.1.51.65
 
-[coreos]
-core-01
 
-[coreos:vars]
-ansible_ssh_user=core
-ansible_python_interpreter="PATH=/opt/bin:$PATH python"
+[s7k8s:vars]
+ansible_connection=ssh
+ansible_user=core
+ansible_python_interpreter=/opt/bin/python
+ansible_ssh_private_key_file=/Racktables/keys/corekey
+ansible_become=true
+
 
 # you can run command just like this..
-# ansible -m setup -i hosts core-01
+# ansible -m setup -i hosts s7k8swk04
