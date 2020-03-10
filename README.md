@@ -7,8 +7,16 @@ this script install Active Python x86_64 binary to CoreOS.
 INSTALL
 =======
 
+### Python2
+
 ```
 wget -qO- https://raw.githubusercontent.com/judexzhu/Install-Python-on-CoreOs/master/install-python.sh | sudo bash
+```
+
+### Python3
+
+```
+wget -qO- https://raw.githubusercontent.com/judexzhu/Install-Python-on-CoreOs/master/install-python3.sh | sudo bash
 ```
 
 RUNNING
