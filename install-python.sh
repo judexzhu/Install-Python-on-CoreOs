@@ -7,7 +7,7 @@ PACKAGE=ActivePython-${VERSION}-linux-x86_64-glibc-2.12-402695
 mkdir -p /opt/bin
 cd /opt
 
-wget http://downloads.activestate.com/ActivePython/releases/${VERSION}/${PACKAGE}.tar.gz
+wget https://downloads.activestate.com/ActivePython/releases/${VERSION}/${PACKAGE}.tar.gz
 tar -xzvf ${PACKAGE}.tar.gz
 
 mv ${PACKAGE} apy && cd apy && ./install.sh -I /opt/python/
