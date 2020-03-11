@@ -18,6 +18,7 @@ wget -qO- https://raw.githubusercontent.com/judexzhu/Install-Python-on-CoreOs/ma
 ```
 wget -qO- https://raw.githubusercontent.com/judexzhu/Install-Python-on-CoreOs/master/install-python3.sh | sudo bash
 ```
+> Tested and works well with Ansible
 
 RUNNING
 =======
